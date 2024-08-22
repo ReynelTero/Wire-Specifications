@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stles.css" />
+    <script src="script.js"></script>
+    <title>Wire Specifications</title
+</head>
+<body>
+    <div class="container">
+        <h1>Wire Specifications</h1>
+        <div class="search-bar">
+            <label for="sizeInput">Size in mm²:</label>
+            <input type="text" id="sizeInput" onkeyup="filterTables()" placeholder="Search by size in mm²">
+            
+            <label for="awgInput">AWG:</label>
+            <input type="text" id="awgInput" onkeyup="filterTables()" placeholder="Search by AWG">
+            
+            <label for="twInput">Amps for TW:</label>
+            <input type="text" id="twInput" onkeyup="filterTables()" placeholder="Search by TW amps">
+            
+            <label for="thwInput">Amps for THW:</label>
+            <input type="text" id="thwInput" onkeyup="filterTables()" placeholder="Search by THW amps">
+            
+            <label for="thhnInput">Amps for THHN:</label>
+            <input type="text" id="thhnInput" onkeyup="filterTables()" placeholder="Search by THHN amps">
+        </div>
+
+        <h2>SOLID (size in mm²)</h2>
+        <table id="strandedTable">
+            <thead>
+                <tr>
+                    <th>Size in mm²</th>
+                    <th>AWG / MCM</th>
+                    <th>Amps for TW</th>
+                    <th>Amps for THW</th>
+                    <th>Amps for THHN</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="mm2">1.6</td>
+                    <td class="blue">14</td>
+                    <td class="blue">15</td>
+                    <td class="blue">15</td>
+                    <td class="blue">25</td>
+                </tr>
+                <tr>
+                    <td class="mm2">2.0</td>
+                    <td>12</td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td class="mm2">2.6</td>
+                    <td class="blue">10</td>
+                    <td class="blue">30</td>
+                    <td class="blue">30</td>
+                    <td class="blue">40</td>
+                </tr>
+                <tr>
+                    <td class="mm2">3.2</td>
+                    <td>8</td>
+                    <td>40</td>
+                    <td>45</td>
+                    <td>50</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+
+        <h2>STRANDED (size in mm²)</h2>
+        <table id="solidTable">
+            <thead>
+                <tr>
+                    <th>Size in mm²</th>
+                    <th>AWG / MCM</th>
+                    <th>Amps for TW</th>
+                    <th>Amps for THW</th>
+                    <th>Amps for THHN</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="mm2">2.0</td>
+                    <td class="blue">14</td>
+                    <td class="blue">15</td>
+                    <td class="blue">15</td>
+                    <td class="blue">25</td>
+                </tr>
+                <tr>
+                    <td class="mm2">3.5</td>
+                    <td>12</td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td class="mm2">5.5</td>
+                    <td class="blue">10</td>
+                    <td class="blue">30</td>
+                    <td class="blue">30</td>
+                    <td class="blue">40</td>
+                </tr>
+                <tr>
+                    <td class="mm2">8</td>
+                    <td>8</td>
+                    <td>40</td>
+                    <td>45</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td class="mm2">14</td>
+                    <td class="blue">6</td>
+                    <td class="blue">55</td>
+                    <td class="blue">65</td>
+                    <td class="blue">70</td>
+                </tr>
+                <tr>
+                    <td class="mm2">22</td>
+                    <td>4</td>
+                    <td>70</td>
+                    <td>85</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td class="mm2">30</td>
+                    <td class="blue">2</td>
+                    <td class="blue">90</td>
+                    <td class="blue">110</td>
+                    <td class="blue">115</td>
+                </tr>
+                <tr>
+                    <td class="mm2">38</td>
+                    <td>1</td>
+                    <td>100</td>
+                    <td>125</td>
+                    <td>130</td>
+                </tr>
+                <tr>
+                    <td class="mm2">50</td>
+                    <td class="blue">1/0</td>
+                    <td class="blue">120</td>
+                    <td class="blue">145</td>
+                    <td class="blue">150</td>
+                </tr>
+                <tr>
+                    <td class="mm2">60</td>
+                    <td>2/0</td>
+                    <td>135</td>
+                    <td>160</td>
+                    <td>170</td>
+                </tr>
+                <tr>
+                    <td class="mm2">80</td>
+                    <td class="blue">3/0</td>
+                    <td class="blue">160</td>
+                    <td class="blue">195</td>
+                    <td class="blue">205</td>
+                </tr>
+                <tr>
+                    <td class="mm2">100</td>
+                    <td>4/0</td>
+                    <td>185</td>
+                    <td>220</td>
+                    <td>225</td>
+                </tr>
+                <tr>
+                    <td class="mm2">125</td>
+                    <td class="blue">250</td>
+                    <td class="blue">210</td>
+                    <td class="blue">255</td>
+                    <td class="blue">265</td>
+                </tr>
+                <tr>
+                    <td class="mm2">150</td>
+                    <td>300</td>
+                    <td>240</td>
+                    <td>280</td>
+                    <td>295</td>
+                </tr>
+                <tr>
+                    <td class="mm2">175</td>
+                    <td class="blue">350</td>
+                    <td class="blue">260</td>
+                    <td class="blue">305</td>
+                    <td class="blue">325</td>
+                </tr>
+                <tr>
+                    <td class="mm2">200</td>
+                    <td>400</td>
+                    <td>280</td>
+                    <td>330</td>
+                    <td>355</td>
+                </tr>
+                <tr>
+                    <td class="mm2">250</td>
+                    <td class="blue">500</td>
+                    <td class="blue">315</td>
+                    <td class="blue">375</td>
+                    <td class="blue">400</td>
+                </tr>
+                <tr>
+                    <td class="mm2">300</td>
+                    <td>600</td>
+                    <td>355</td>
+                    <td>410</td>
+                    <td>445</td>
+                </tr>
+                <tr>
+                    <td class="mm2">325</td>
+                    <td class="blue">620</td>
+                    <td class="blue">370</td>
+                    <td class="blue">435</td>
+                    <td class="blue">470</td>
+                </tr>
+                <tr>
+                    <td class="mm2">280</td>
+                    <td>750</td>
+                    <td>390</td>
+                    <td>470</td>
+                    <td>500</td>
+                </tr>
+                <tr>
+                    <td class="mm2">400</td>
+                    <td class="blue">800</td>
+                    <td class="blue">405</td>
+                    <td class="blue">485</td>
+                    <td class="blue">515</td>
+                </tr>
+                <tr>
+                    <td class="mm2">500</td>
+                    <td>1000</td>
+                    <td>445</td>
+                    <td>540</td>
+                    <td>580</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
